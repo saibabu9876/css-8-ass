@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        .grid{
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            display: grid;
+            gap: 3px;
+        }
+        .grid1{
+            background-color: black;
+            width: 25vw;
+            height:25vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            display: grid;
+            gap: 3px;
+        }
+        .iteam1{
+               background-color: red;
+           
+        }
+        .iteam2{
+    
+            background-color: orange;
+           
+
+        }
+        .iteam3{
+            background-color: yellow;
+           
+        }
+        .iteam4{
+            background-color: green;
+           
+        }
+        .iteam5{
+            background-color: aqua;
+           
+        }
+        .iteam6{
+            background-color: aquamarine;
+           
+        }
+        .grid2{
+            
+            background-color: black;
+            width: 25vw;
+            height:25vh;
+            grid-template-columns: 2fr 2fr 2fr;
+            display: grid;
+            gap: 3px;
+        }
+        .sb{
+            background-color: red;
+            grid-column: 1/3;
+           
+        }
+        .lb{
+            background-color: orange;
+            grid-row: 1/3;
+            grid-column: 3;
+           
+
+        }
+        .ab{
+            background-color: yellow;
+            
+           
+        }
+        .bb{         
+            background-color: green;
+           
+        }
+        .grid3{
+            background-color: black;
+            width: 25vw;
+            height:25vh;
+            grid-template-columns: 2fr 2fr 2fr;
+            display: grid;
+            gap: 3px;  
+        }
+        .aa1{
+               background-color: red;
+               grid-column: 1/4;
+           
+        }
+        .ba2{
+    
+            background-color: orange;
+           
+
+        }
+        .ca3{
+            background-color: yellow;
+            grid-column: 2/4;
+             grid-column: 2,3;
+            
+
+           
+        }
+        .da4{
+            background-color: green;
+            grid-column: 1/4;
+           
+        }
+        .grid4{
+            background-color: black;
+            width: 25vw;
+            height:25vh;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            display: grid;
+            gap: 3px; 
+        }
+        .ac{
+               background-color: red;
+               grid-column: 1/3
+               
+           
+        }
+        .bc{
+    
+            background-color: orange;
+           grid-column: 3/5
+           
+
+        }
+        .cc{
+            background-color: yellow;
+            
+           
+        }
+        .dc{
+            background-color: green;
+            grid-column: 2/5;
+           
+        }
+        .ec{
+            background-color: aqua;
+            grid-column: 1/5;
+        }
+        .grid5{
+            background-color: black;
+            width: 25vw;
+            height:25vh;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+            grid-template-rows: 2fr 2fr 2fr;
+            display: grid;
+            gap: 3px;
+        }
+        .ad{
+               background-color: red;
+           
+        }
+        .bd{
+    
+            background-color: orange;
+           
+
+        }
+        .cd{
+            background-color: yellow;
+           
+        }
+        .dd{
+            background-color: green;
+           
+        }
+        .ed{
+            background-color: aqua;
+           
+        }
+        .fd{
+            background-color: aquamarine;
+        }
+         .gd{      background-color: red;
+           
+        }
+        .hd{
+    
+            background-color: orange;
+           
+
+        }
+        .id{
+            background-color: yellow;
+           
+        }
+        .jd{
+            background-color: green;
+           
+        }
+        
+        .kd{
+            background-color: aqua;
+           
+        }
+        .ld{
+            background-color: aquamarine;
+        }
+        .md{    
+               background-color: red;
+           
+        }
+        .nd{
+    
+            background-color: orange;
+           
+
+        }
+        .od{
+            background-color: yellow;
+           
+        }
+        .pd{
+            background-color: green;
+           
+        }
+        .qd{
+            background-color: aqua;
+           
+        }
+        .rd{
+            background-color: aquamarine;
+        }
+        .grid6{
+            
+            background-color: black;
+            width: 25vw;
+            height:25vh;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            display: grid;
+            gap: 3px;
+        }
+        .ae{
+               background-color: red;
+               grid-column: 1/3;
+           
+        }
+        .be{
+    
+            background-color: orange;
+           
+
+        }
+        .ce{
+            background-color: yellow;
+           
+        }
+        .de{
+            background-color: green;
+           
+        }
+        .ee{
+            background-color: aqua;
+           
+        }
+        .fe{
+            background-color: aquamarine;
+        }
+         .ge{      background-color: red;
+            grid-row: 3/5;
+            grid-column: 1/3;
+           
+        }
+        .he{
+    
+            background-color: orange;
+            grid-row: 4/5;
+           
+
+        }
+        .ie{
+            background-color: yellow;
+            grid-row: 3/4;
+           
+        }
+        .je{
+            background-color: green;
+            grid-row: 4/3;
+           
+        }
+        
+        .ke{
+            background-color: aqua;
+            grid-column: 1/4;
+           
+        }
+        .le{
+            background-color: aquamarine;
+        }
+        .grid7{
+            background-color: black;
+            width: 25vw;
+            height:25vh;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            display: grid;
+            gap: 3px; 
+        }
+        .af{
+               background-color: red;
+               grid-column: 1/3;
+           
+        }
+        .bf{
+    
+            background-color: orange;
+            grid-column: 3/5;
+           
+
+        }
+        .cf{
+            background-color: yellow;
+            grid-column: 1/3;
+            grid-row: 2/4;
+           
+        }
+        .df{
+            background-color: green;
+            grid-column: 3/5;
+           
+        }
+        .ef{
+            background-color: aqua;
+           
+        }
+        .ff{
+            background-color: aquamarine;
+        }
+        .grid8{
+            background-color: black;
+            width: 25vw;
+            height:25vh;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+            display: grid;
+            gap: 3px;
+        } 
+        .ag{
+               background-color: red;
+           
+        }
+        .bg{
+    
+            background-color: orange;
+           
+
+        }
+        .cg{
+            background-color: yellow;
+           
+        }
+        .dg{
+            background-color: green;
+           
+        }
+        .eg{
+            background-color: aqua;
+           
+        }
+        .fg{
+            background-color: aquamarine;
+        }
+         .gg{      background-color: red;
+           
+        }
+        .hg{
+    
+            background-color: orange;
+            grid-column: 3/6;
+           
+
+        }
+        .ig{
+            background-color: yellow;
+            grid-column: 1/6;
+           
+        }
+        .grid9{
+            background-color: black;
+            width: 25vw;
+            height:25vh;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            display: grid;
+            gap: 3px; 
+        }
+        .ah{
+               background-color: red;
+               grid-column: 1/5;
+           
+        }
+        .bh{
+    
+            background-color: orange;
+            grid-row: 2/4;
+            grid-column: 1/3;
+           
+
+        }
+        .ch{
+            background-color: yellow;
+            grid-column: 3/5;
+            
+           
+        }
+        .dh{
+            background-color: green;
+           
+        }
+        .eh{
+            background-color: aqua;
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="grid1">
+            <div class="iteam iteam1"></div>
+            <div class="iteam iteam2"></div>
+            <div class="iteam iteam3"></div>
+            <div class="iteam iteam4"></div>
+            <div class="iteam iteam5"></div>
+            <div class="iteam iteam6"></div>
+        </div>
+        <div class="grid2">
+            <div class="sb sb1"></div>
+            <div class="lb lb2"></div>
+            <div class="ab ab3"></div>
+            <div class="bb bb4"></div>
+            
+        </div>
+        <div class="grid3">
+        <div class="aa aa1"></div>
+        <div class="ba ba2"></div>
+        <div class="ca ca3"></div>
+        <div class="da da4"></div>
+        </div>
+        <div class="grid4">
+            <div class="ac ac1"></div>
+            <div class="bc bc2"></div>
+            <div class="cc cc3"></div>
+            <div class="dc dc4"></div>
+            <div class="ec ec5"></div>
+        </div>
+        <div class="grid5">
+            <div class="ad ad1"></div>
+            <div class="bd bd2"></div>
+            <div class="cd cd3"></div>
+            <div class="dd dd4"></div>
+            <div class="ed ed5"></div>
+            <div class="fd fd6"></div>
+            <div class="gd gd7"></div>
+            <div class="hd hd8"></div>
+            <div class="id id9"></div>
+            <div class="jd jd10"></div>
+            <div class="kd kd11"></div>
+            <div class="ld ld12"></div>
+            <div class="md md13"></div>
+            <div class="nd nd14"></div>
+            <div class="od od15"></div>
+            <div class="pd pd16"></div>
+            <div class="qd qd17"></div>
+            <div class="rd rd18"></div>
+        </div>
+        <div class="grid6">
+            <div class="ae ae1"></div>
+            <div class="be be2"></div>
+            <div class="ce ce3"></div>
+            <div class="de de4"></div>
+            <div class="ee ee5"></div>
+            <div class="fe fe6"></div>
+            <div class="ge ge7"></div>
+            <div class="he he8"></div>
+            <div class="ie ie9"></div>
+            <div class="je je10"></div>
+            <div class="ke ke11"></div>
+            <div class="le le12"></div>
+        </div>
+        <div class="grid7">
+            <div class="af af1"></div>
+            <div class="bf bf2"></div>
+            <div class="cf cf3"></div>
+            <div class="df df4"></div>
+            <div class="ef ef5"></div>
+            <div class="ff ff6"></div>
+        </div>
+        <div class="grid8">
+            <div class="ag ag1"></div>
+            <div class="bg bg2"></div>
+            <div class="cg cg3"></div>
+            <div class="dg dg4 "></div>
+            <div class="eg eg5"></div>
+            <div class="fg fg6"></div>
+            <div class="gg gg7"></div>
+            <div class="hg hg8"></div>
+            <div class="ig ig9"></div>
+        </div>
+        <div class="grid9">
+            <div class="ah ah1"></div>
+            <div class="bh bh2"></div>
+            <div class="ch ch3"></div>
+            <div class="dh dh4"></div>
+            <div class="eh eh5"></div>
+        </div>
+    </div>
+</body>
+</html>
